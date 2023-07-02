@@ -1,0 +1,21 @@
+263A - Beautiful Matrix
+
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long
+ 
+int main(){
+    ll matrix[5][5];
+    ll ans = 0;
+    for(ll i=0; i<5; i++){
+        for(ll j=0; j<5; j++){
+            cin>>matrix[i][j];
+            if(matrix[i][j] == 1) {
+                ans = abs(2-i) + abs(2-j);
+                break;
+            }
+        }
+    }
+    cout<<ans<<endl;
+    return 0;
+}

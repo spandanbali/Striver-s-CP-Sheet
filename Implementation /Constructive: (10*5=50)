@@ -1,0 +1,17 @@
+A - Bit++
+
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long
+int main(){
+    ll n; cin>>n;
+    ll x = 0;
+    string s = "";
+    while(n--){
+        cin>>s;
+        if(s == "X++" || s=="++X") x++;
+        else x--;
+    }
+    cout<<x<<endl;
+    return 0;
+}
